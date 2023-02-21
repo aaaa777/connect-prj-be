@@ -4,7 +4,7 @@ services:
   vscsrv:
     build: .
     ports:
-      - 8080:8080
+      - 8080:8000
     volumes:
       - "/home/ubuntu/.vscode-cli/token.json:/root/.vscode-cli/token.json:ro"
 #      - "/home/ubuntu/.vscode-cli/code_tunnel.json:/root/.vscode-cli/code_tunnel.json:ro"
