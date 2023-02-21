@@ -4,8 +4,8 @@ services:
   vscsrv:
     build: .
     ports:
-      - 7780:3000
+      - 8080:8080
     volumes:
-      - "/home/ubuntu/.vscode-cli/token.json:/root/.vscode-cli/token.json"
-      - "/home/ubuntu/.vscode-cli/code_tunnel.json:/root/.vscode-cli/code_tunnel.json"
-      - "/home/ubuntu/.vscode-cli/license_consent.json:/root/.vscode-cli/license_consent.json"
+      - "/home/ubuntu/.vscode-cli/token.json:/root/.vscode-cli/token.json:ro"
+#      - "/home/ubuntu/.vscode-cli/code_tunnel.json:/root/.vscode-cli/code_tunnel.json:ro"
+      - "/home/ubuntu/.vscode-cli/license_consent.json:/root/.vscode-cli/license_consent.json:ro"
